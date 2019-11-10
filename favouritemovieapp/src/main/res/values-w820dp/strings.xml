@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tvCountry">Country</string>
+    <string name="episode">Episodes</string>
+    <string name="app_name_favourite">Favourite</string>
+    <string name="favMovie">Favourite Movie</string>
+    <string name="favTvShow">Favourite TV Show</string>
+    <string name="tvSearch">Search</string>
+    <string name="tvSearchMovie">Search for movie</string>
+    <string name="tvSearchTvShow">Search for TV show</string>
+    <string name="message_error_search">Your input still empty</string>
+    <string name="message_already">Your request has been delivered!</string>
+    <string name="is_daily_reminder">Daily Reminder</string>
+    <string name="is_release_reminder">Release Reminder</string>
+    <string name="reminder">Setting Reminder</string>
+    <string name="key_daily_reminder">daily reminder</string>
+    <string name="key_release_reminder">release reminder</string>
+    <string name="miss">missing you!</string>
+    <string name="release_today">has been release today!</string>
+    <string name="setting">Seting</string>
+</resources>

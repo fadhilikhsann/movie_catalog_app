@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fadhilikhsann.mysubmission3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="com.example.fadhilikhsann.mysubmission3.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.fadhilikhsann.mysubmission3.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EntertainGoo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".provider.FavouriteProvider"
+            android:authorities="com.example.fadhilikhsann.mysubmission3"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.example.fadhilikhsann.mysubmission3.READ_DATABASE"
+            android:writePermission="com.example.fadhilikhsann.mysubmission3.WRITE_DATABASE" />
+
+        <service
+            android:name=".widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name=".widget.FavMovieWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/fav_movie_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".notification.ReminderReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".setting.MySettingPreference" />
+        <activity
+            android:name=".search.TvShowSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".search.MovieSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".favourite.FavouriteTvShowActivity" />
+        <activity android:name=".favourite.FavouriteMovieActivity" />
+        <activity
+            android:name=".TvShow.DetailTvShowActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Movie.DetailMovieActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

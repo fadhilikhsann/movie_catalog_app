@@ -1,0 +1,2 @@
+include ':app', ':favouritemovieapp'
+rootProject.name='MySubmission3'

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Entertainment</string>
+    <string name="tab_text_1">Movie</string>
+    <string name="tab_text_2">Tv Show</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvJudul">Title</string>
+    <string name="tvGenre">Genre</string>
+    <string name="tvRating">Rate</string>
+    <string name="tvOverview">Overview</string>
+    <string name="bahasa">Change Language</string>
+    <string name="bahasa_api">en</string>
+    <string name="tvProduser">Producer</string>
+    <string name="tvRelease">Release Date</string>
+    <string name="tvDuration">Duration</string>
+    <string name="minute">Minutes</string>
+    <string name="tvCountry">Country</string>
+    <string name="episode">Episodes</string>
+    <string name="title_activity_favourite">Favourite Activity</string>
+    <string name="app_name_favourite">Favourite</string>
+    <string name="favMovie">Favourite Movie</string>
+    <string name="favTvShow">Favourite TV Show</string>
+    <string name="tvSearch">Search</string>
+    <string name="tvSearchMovie">Search for movie</string>
+    <string name="tvSearchTvShow">Search for TV show</string>
+    <string name="message_error_search">Your input still empty</string>
+    <string name="message_already">Your request has been delivered!</string>
+    <string name="is_daily_reminder">Daily Reminder</string>
+    <string name="is_release_reminder">Release Reminder</string>
+    <string name="reminder">Setting Reminder</string>
+    <string name="key_daily_reminder">daily reminder</string>
+    <string name="key_release_reminder">release reminder</string>
+    <string name="miss">missing you!</string>
+    <string name="release_today">has been release today!</string>
+    <string name="setting">Setting</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

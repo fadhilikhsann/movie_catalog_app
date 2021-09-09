@@ -1,5 +1,7 @@
 package com.example.fadhilikhsann.mysubmission3.favourite;
 
+import static androidx.constraintlayout.widget.Constraints.TAG;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.AsyncTask;
@@ -12,6 +14,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,8 +29,6 @@ import com.google.android.material.snackbar.Snackbar;
 import java.lang.ref.WeakReference;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import static androidx.constraintlayout.widget.Constraints.TAG;
 
 interface LoadTvShowCallback {
     void preExecute();
@@ -83,6 +84,11 @@ public class FavouriteTvShowActivity extends AppCompatActivity implements LoadTv
                 //dbTaken=true;
             }
         }
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Favourite TV Shows");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

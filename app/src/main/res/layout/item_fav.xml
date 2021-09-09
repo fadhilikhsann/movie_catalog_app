@@ -30,8 +30,8 @@
 
             <ImageView
                 android:id="@+id/imgFoto"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="42sp"
+                android:layout_height="56sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="16dp"
                 android:contentDescription="for poster"
@@ -74,7 +74,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+
                 android:text="ID"
 
                 app:layout_constraintEnd_toEndOf="@+id/tvJudul"

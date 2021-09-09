@@ -55,8 +55,12 @@
         <activity
             android:name=".search.MovieSearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".favourite.FavouriteTvShowActivity" />
-        <activity android:name=".favourite.FavouriteMovieActivity" />
+        <activity
+            android:name=".favourite.FavouriteTvShowActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".favourite.FavouriteMovieActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TvShow.DetailTvShowActivity"
             android:theme="@style/AppTheme.NoActionBar" />

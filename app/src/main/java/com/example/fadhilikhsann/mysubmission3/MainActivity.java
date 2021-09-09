@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity implements MovieFragment.OnF
 
             @Override
             public void onPageSelected(int position) {
-                Toast.makeText(MainActivity.this,
-                        "Selected page position: " + position, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,
+                //        "Selected page position: " + position, Toast.LENGTH_SHORT).show();
                 if (position == 0) {
                     edtCari.setHint(getResources().getString(R.string.tvSearchMovie));
                     searchFor(0);

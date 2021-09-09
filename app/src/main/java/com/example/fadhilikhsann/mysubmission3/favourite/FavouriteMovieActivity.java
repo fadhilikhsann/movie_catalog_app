@@ -1,5 +1,8 @@
 package com.example.fadhilikhsann.mysubmission3.favourite;
 
+import static androidx.constraintlayout.widget.Constraints.TAG;
+import static com.example.fadhilikhsann.mysubmission3.db.DatabaseContract_Movie.CONTENT_URI;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.ContentObserver;
@@ -16,6 +19,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,9 +33,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-
-import static androidx.constraintlayout.widget.Constraints.TAG;
-import static com.example.fadhilikhsann.mysubmission3.db.DatabaseContract_Movie.CONTENT_URI;
 
 interface LoadMovieCallback {
     void preExecute();
@@ -85,6 +86,11 @@ public class FavouriteMovieActivity extends AppCompatActivity implements LoadMov
                 adapter.setListMovieFav(list);
             }
         }
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Favourite Movies");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

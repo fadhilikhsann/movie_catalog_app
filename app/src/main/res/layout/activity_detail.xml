@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#fff"
     android:fillViewport="true">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000"
+        android:background="#fff"
 
         >
 
@@ -34,7 +34,7 @@
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#000"
+            android:background="#fff"
             android:theme="@style/AppTheme.AppBarOverlay"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
             android:id="@+id/imageView5"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="#000"
+            android:background="#fff"
             android:contentDescription="for value content"
             app:layout_constraintBottom_toBottomOf="@+id/tvRate"
             app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +153,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/tvProduser"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/imgPoster"
             app:layout_constraintEnd_toEndOf="parent"
@@ -167,7 +167,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/tvJudul"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/tvProducer"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"
@@ -185,7 +185,7 @@
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
             android:text="@string/tvRating"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/imageView5"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
@@ -238,7 +238,7 @@
             android:layout_marginStart="11dp"
             android:layout_marginTop="8dp"
             android:text="Overview"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/imageView6"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -251,7 +251,7 @@
             android:layout_marginStart="11dp"
             android:layout_marginTop="16dp"
             android:text="@string/tvRelease"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/imageView7"
             app:layout_constraintTop_toBottomOf="@+id/tvOverview" />

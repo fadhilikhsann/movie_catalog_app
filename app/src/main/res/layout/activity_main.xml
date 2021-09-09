@@ -24,7 +24,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#fff"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <LinearLayout
@@ -32,28 +32,33 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/corner_edittext"
                 android:orientation="horizontal"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
                 android:paddingLeft="16dp"
-                android:paddingTop="8dp"
+                android:paddingTop="4dp"
                 android:paddingRight="16dp"
-                android:paddingBottom="8dp">
+                android:paddingBottom="4dp">
 
                 <EditText
                     android:id="@+id/edtCari"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:textColor="#000"
                     android:background="#00000000"
                     android:hint="@string/tvSearchMovie"
                     android:inputType="text"
                     android:maxLines="1"
-                    android:textColor="#fff" />
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:id="@+id/imgCari"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:contentDescription="For search"
-                    android:src="@drawable/ic_search_black_24dp" />
+                    android:src="@drawable/ic_baseline_search_24" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 

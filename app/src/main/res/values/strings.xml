@@ -33,7 +33,7 @@
     <string name="key_release_reminder">release reminder</string>
     <string name="miss">missing you!</string>
     <string name="release_today">has been release today!</string>
-    <string name="setting">Seting</string>
+    <string name="setting">Setting</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
 </resources>

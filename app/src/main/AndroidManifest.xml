@@ -48,7 +48,11 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".setting.MySettingPreference" />
+        <activity
+            android:name=".setting.MySettingPreference"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
         <activity
             android:name=".search.TvShowSearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />

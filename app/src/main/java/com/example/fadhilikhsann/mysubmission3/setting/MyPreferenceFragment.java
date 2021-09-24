@@ -79,6 +79,7 @@ public class MyPreferenceFragment extends PreferenceFragmentCompat implements Sh
                 alarmReceiver.cancelAlarm(getActivity(), ReminderReceiver.TYPE_DAILY);
                 Log.d(TAG, "onSharedPreferenceChanged_DAILY_CLEAR: " + sharedPreferences.getBoolean(DAILY_REMINDER, false));
             }
+
         } else if (s.equals(RELEASE_REMINDER)) {
             releaseReminderPreference.setChecked(sharedPreferences.getBoolean(RELEASE_REMINDER, false));
 

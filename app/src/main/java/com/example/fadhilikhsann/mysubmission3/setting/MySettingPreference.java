@@ -5,6 +5,7 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.fadhilikhsann.mysubmission3.R;
 
@@ -19,6 +20,11 @@ public class MySettingPreference extends AppCompatActivity {
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(R.string.setting);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        } else {
+            Toolbar toolbar = findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
+            getSupportActionBar().setTitle("Setting");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 

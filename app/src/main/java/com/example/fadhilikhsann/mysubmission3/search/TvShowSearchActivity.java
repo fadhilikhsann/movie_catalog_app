@@ -41,17 +41,13 @@ public class TvShowSearchActivity extends AppCompatActivity {
     private TvShowAdapter adapter;
     private ProgressBar progressBar;
     private TvShowViewModel tvShowViewModel;
-    private Observer<ArrayList<TvShowItems>> getTvShow = new Observer<ArrayList<TvShowItems>>() {
+    private final Observer<ArrayList<TvShowItems>> getTvShow = new Observer<ArrayList<TvShowItems>>() {
         @Override
         public void onChanged(ArrayList<TvShowItems> items) {
             if (items != null) {
                 Log.d(TAG, "Observe: " + items.size());
                 adapter.setData(items);
-                if (adapter.getItemCount() > 0) {
-                    showLoading(false);
-                } else {
-                    showLoading(true);
-                }
+                showLoading(adapter.getItemCount() <= 0);
             }
         }
     };
@@ -69,7 +65,7 @@ public class TvShowSearchActivity extends AppCompatActivity {
         final String cari = getIntent().getStringExtra(EXTRA_DATA);
         edtCari = findViewById(R.id.edtCari);
         imgCari = findViewById(R.id.imgCari);
-        edtCari.setText(cari);
+        edtCari.setHint("Searching for TV show '" + cari + "'");
 
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);

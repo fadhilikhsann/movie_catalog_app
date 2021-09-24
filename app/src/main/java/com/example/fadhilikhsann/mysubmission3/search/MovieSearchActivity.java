@@ -41,17 +41,13 @@ public class MovieSearchActivity extends AppCompatActivity {
     private MovieAdapter adapter;
     private ProgressBar progressBar;
     private MovieViewModel movieViewModel;
-    private Observer<ArrayList<MovieItems>> getMovie = new Observer<ArrayList<MovieItems>>() {
+    private final Observer<ArrayList<MovieItems>> getMovie = new Observer<ArrayList<MovieItems>>() {
         @Override
         public void onChanged(ArrayList<MovieItems> items) {
             if (items != null) {
                 Log.d(TAG, "Observe: " + items.size());
                 adapter.setData(items);
-                if (adapter.getItemCount() > 0) {
-                    showLoading(false);
-                } else {
-                    showLoading(true);
-                }
+                showLoading(adapter.getItemCount() <= 0);
             }
         }
     };
@@ -69,7 +65,7 @@ public class MovieSearchActivity extends AppCompatActivity {
         final String cari = getIntent().getStringExtra(EXTRA_DATA);
         edtCari = findViewById(R.id.edtCari);
         imgCari = findViewById(R.id.imgCari);
-        edtCari.setText(cari);
+        edtCari.setHint("Searching for movie '" + cari + "'");
 
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
